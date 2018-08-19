@@ -1,0 +1,67 @@
+<!-- # Frontend Developer task
+
+- Your task is to implement a basic currency converter which converts values between Euro, US Dollar and Japanese Yen.
+- To retrieve the exchange rates, connect via Javascript to the [Fixer API](http://fixer.io)
+- In the JavaScript you should make Ajax calls with [`axios`](https://github.com/axios/axios). Do not use any other libraries or frameworks like jQuery, Angular, React, etc.
+- Points to consider are industry best practices in terms of usability, semantic HTML, error handling and scalable CSS. Do not use any post- or pre-processors for your styles, and do not use any styling libraries like Bootstrap or Foundation.
+- As the solution must only work on the latest Chrome version, you can make use of ES6 features and new CSS technologies without thinking about transpiling or vendor-prefixing things. Of course you do not have to use fancy new stuff.   -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<h1>Currency Convertor</h1>
+	<div class="container">
+		<form>
+		<div class="row">
+			<div class="col-25">
+				<label>Enter Amount to Convert</label>
+			</div>
+			<div class="col-75">
+				<input type="text" class="amount" id="amount" placeholder="Enter amount..">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label>From</label>
+			</div>
+			<div class="col-75">
+				<select id="fromCountry" name="country">
+					<option class="euro" value="Euro">Euro</option>
+					<option class="usDollar" value="USD">US Dollar</option>
+					<option class="japaneseYen" value="JPY">Japanese Yen</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label>to</label>
+			</div>
+			<div class="col-75">
+				<select id="toCountry" name="country">
+					<option class="usDollar" value="USD">US Dollar</option>
+					<option class="euro" value="Euro">Euro</option>
+					<option class="japaneseYen" value="JPY">Japanese Yen</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label>Converted rate</label>
+			</div>
+			<div class="col-75">
+				<input type="text" class="result" id="result" placeholder="Result..." value="">
+			</div>
+		</div>
+		<!-- <div class="row">
+			<button class="convertButton" onclick="moneyConvert();">Convert</button>
+		</div> -->
+		</form>
+	</div>
+</body>
+<script src="Javascript/index.js"></script>
+</html>
