@@ -1,5 +1,5 @@
 //Use fixer api to retrieve the exchange rates
-var baseurl = 'http://data.fixer.io/api/';
+var baseurl = 'https://data.fixer.io/api/';
 
 // get the fiels using class and id
 const inputVal = document.querySelector(".amount"); //user input
