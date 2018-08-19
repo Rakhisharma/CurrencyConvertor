@@ -11,6 +11,8 @@ Currency converter using Axios ajax call and fixerAPI
 
 - As now you have clone of this repository in your local system, you can run this project on any server and see the result. if you have python, go to the terminal and follow the command below:
 
+- `git clone https://github.com/Rakhisharma/CurrencyConvertor.git`
+
 - `cd CurrencyConvertor`
 
 - running server in your terminal: `python -m SimpleHTTPServer 8000`
